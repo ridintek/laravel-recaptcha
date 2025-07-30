@@ -8,14 +8,14 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha;
+namespace Ridintek\ReCaptcha;
 
-use Biscolab\ReCaptcha\Exceptions\InvalidConfigurationException;
+use Ridintek\ReCaptcha\Exceptions\InvalidConfigurationException;
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderInvisible
- * @package Biscolab\ReCaptcha
+ * @package Ridintek\ReCaptcha
  */
 class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
 {
@@ -52,7 +52,7 @@ class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
         $tag_properties = '';
 
         $properties = array_merge([
-            'data-callback' => 'biscolabLaravelReCaptcha',
+            'data-callback' => 'ridintekLaravelReCaptcha',
         ], $properties, 
         [
             'data-sitekey'  => $this->api_site_key
@@ -101,7 +101,7 @@ class ReCaptchaBuilderInvisible extends ReCaptchaBuilder
             $this->form_id = $form_id;
         }
         $html .= '<script>
-		       function biscolabLaravelReCaptcha(token) {
+		       function ridintekLaravelReCaptcha(token) {
 		         document.getElementById("' . $form_id . '").submit();
 		       }
 		     </script>';

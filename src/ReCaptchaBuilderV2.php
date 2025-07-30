@@ -9,14 +9,14 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha;
+namespace Ridintek\ReCaptcha;
 
-use Biscolab\ReCaptcha\Exceptions\InvalidConfigurationException;
+use Ridintek\ReCaptcha\Exceptions\InvalidConfigurationException;
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderV2
- * @package Biscolab\ReCaptcha
+ * @package Ridintek\ReCaptcha
  */
 class ReCaptchaBuilderV2 extends ReCaptchaBuilder
 {
@@ -102,7 +102,7 @@ class ReCaptchaBuilderV2 extends ReCaptchaBuilder
 
         $attributes = $this->getTagAttributes();
 
-        return "<script>var biscolabOnloadCallback = function() {grecaptcha.render('recaptcha-element', " . json_encode($attributes) . ");};</script>";
+        return "<script>var ridintekOnloadCallback = function() {grecaptcha.render('recaptcha-element', " . json_encode($attributes) . ");};</script>";
     }
 
     /**

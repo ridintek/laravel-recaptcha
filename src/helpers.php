@@ -9,13 +9,13 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-use Biscolab\ReCaptcha\Facades\ReCaptcha;
+use Ridintek\ReCaptcha\Facades\ReCaptcha;
 
 if (!function_exists('recaptcha')) {
     /**
-     * @return Biscolab\ReCaptcha\ReCaptchaBuilder|\Biscolab\ReCaptcha\ReCaptchaBuilderV2|\Biscolab\ReCaptcha\ReCaptchaBuilderInvisible|\Biscolab\ReCaptcha\ReCaptchaBuilderV3
+     * @return Ridintek\ReCaptcha\ReCaptchaBuilder|\Ridintek\ReCaptcha\ReCaptchaBuilderV2|\Ridintek\ReCaptcha\ReCaptchaBuilderInvisible|\Ridintek\ReCaptcha\ReCaptchaBuilderV3
      */
-    function recaptcha(): \Biscolab\ReCaptcha\ReCaptchaBuilder
+    function recaptcha(): \Ridintek\ReCaptcha\ReCaptchaBuilder
     {
 
         return app('recaptcha');
@@ -116,7 +116,7 @@ if (!function_exists('recaptchaRuleName')) {
     function recaptchaRuleName(): string
     {
 
-        return \Biscolab\ReCaptcha\ReCaptchaBuilder::DEFAULT_RECAPTCHA_RULE_NAME;
+        return \Ridintek\ReCaptcha\ReCaptchaBuilder::DEFAULT_RECAPTCHA_RULE_NAME;
     }
 }
 
@@ -132,6 +132,6 @@ if (!function_exists('recaptchaFieldName')) {
     function recaptchaFieldName(): string
     {
 
-        return \Biscolab\ReCaptcha\ReCaptchaBuilder::DEFAULT_RECAPTCHA_FIELD_NAME;
+        return \Ridintek\ReCaptcha\ReCaptchaBuilder::DEFAULT_RECAPTCHA_FIELD_NAME;
     }
 }

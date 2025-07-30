@@ -9,14 +9,14 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha;
+namespace Ridintek\ReCaptcha;
 
 use Illuminate\Support\Arr;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 /**
  * Class ReCaptchaBuilder
- * @package Biscolab\ReCaptcha
+ * @package Ridintek\ReCaptcha
  */
 class ReCaptchaBuilder
 {
@@ -34,7 +34,7 @@ class ReCaptchaBuilder
     /**
      * @var string
      */
-    const DEFAULT_ONLOAD_JS_FUNCTION = 'biscolabOnloadCallback';
+    const DEFAULT_ONLOAD_JS_FUNCTION = 'ridintekOnloadCallback';
 
     /**
      * @var string

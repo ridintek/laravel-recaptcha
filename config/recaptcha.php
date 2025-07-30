@@ -62,7 +62,7 @@ return [
      * @since v3.2.0
      *
      */
-    'default_validation_route'     => 'biscolab-recaptcha/validate',
+    'default_validation_route'     => 'ridintek-recaptcha/validate',
 
     /**
      *
@@ -88,7 +88,7 @@ return [
      * @since v4.0.0
      *
      */
-    'default_form_id'              => 'biscolab-recaptcha-invisible-form',
+    'default_form_id'              => 'ridintek-recaptcha-invisible-form',
 
     /**
      *
@@ -159,20 +159,20 @@ return [
         /**
          * The name of your callback function, executed when the user submits a successful response.
          * The g-recaptcha-response token is passed to your callback.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "ridintekOnloadCallback"
          */
         'callback'         => null,
 
         /**
          * The name of your callback function, executed when the reCAPTCHA response expires and the user needs to re-verify.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "ridintekOnloadCallback"
          */
         'expired-callback' => null,
 
         /**
          * The name of your callback function, executed when reCAPTCHA encounters an error (usually network connectivity) and cannot continue until connectivity is restored.
          * If you specify a function here, you are responsible for informing the user that they should retry.
-         * DO NOT SET "biscolabOnloadCallback"
+         * DO NOT SET "ridintekOnloadCallback"
          */
         'error-callback'   => null,
     ]

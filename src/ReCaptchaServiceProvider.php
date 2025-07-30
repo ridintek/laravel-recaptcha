@@ -9,7 +9,7 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha;
+namespace Ridintek\ReCaptcha;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
@@ -17,7 +17,7 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class ReCaptchaServiceProvider
- * @package Biscolab\ReCaptcha
+ * @package Ridintek\ReCaptcha
  */
 class ReCaptchaServiceProvider extends ServiceProvider
 {
@@ -94,8 +94,8 @@ class ReCaptchaServiceProvider extends ServiceProvider
     {
 
         Route::get(
-            config('recaptcha.default_validation_route', 'biscolab-recaptcha/validate'),
-            ['uses' => 'Biscolab\ReCaptcha\Controllers\ReCaptchaController@validateV3']
+            config('recaptcha.default_validation_route', 'ridintek-recaptcha/validate'),
+            ['uses' => 'Ridintek\ReCaptcha\Controllers\ReCaptchaController@validateV3']
         )->middleware('web');
 
         return $this;

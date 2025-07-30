@@ -8,13 +8,13 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha\Facades;
+namespace Ridintek\ReCaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class ReCaptcha
- * @package Biscolab\ReCaptcha\Facades
+ * @package Ridintek\ReCaptcha\Facades
  *
  * @method static string htmlScriptTagJsApi(?array $config = [])
  * @method static string htmlFormButton(?string $button_label = '', ?array $properties = [])

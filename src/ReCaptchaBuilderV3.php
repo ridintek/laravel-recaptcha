@@ -9,13 +9,13 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha;
+namespace Ridintek\ReCaptcha;
 
 use Illuminate\Support\Arr;
 
 /**
  * Class ReCaptchaBuilderV3
- * @package Biscolab\ReCaptcha
+ * @package Ridintek\ReCaptcha
  */
 class ReCaptchaBuilderV3 extends ReCaptchaBuilder
 {
@@ -44,7 +44,7 @@ class ReCaptchaBuilderV3 extends ReCaptchaBuilder
     {
         return url(config(
             'recaptcha.default_validation_route',
-            'biscolab-recaptcha/validate'
+            'ridintek-recaptcha/validate'
         ));
     }
 

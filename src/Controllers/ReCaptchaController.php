@@ -8,13 +8,13 @@
  * MIT license: https://github.com/biscolab/laravel-recaptcha/blob/master/LICENSE
  */
 
-namespace Biscolab\ReCaptcha\Controllers;
+namespace Ridintek\ReCaptcha\Controllers;
 
 use Illuminate\Routing\Controller;
 
 /**
  * Class ReCaptchaController
- * @package Biscolab\ReCaptcha\Controllers
+ * @package Ridintek\ReCaptcha\Controllers
  */
 class ReCaptchaController extends Controller
 {
