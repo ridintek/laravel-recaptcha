@@ -1,5 +1,5 @@
 {
-    "name": "biscolab/laravel-recaptcha",
+    "name": "ridintek/laravel-recaptcha",
     "description": "Simple and painless Google reCAPTCHA package for Laravel framework",
     "license": "MIT",
     "type": "library",
@@ -16,12 +16,18 @@
             "email": "roby.belotti@gmail.com",
             "homepage": "https://biscolab.com",
             "role": "Developer"
+        },
+        {
+            "name": "Riyan Widiyanto",
+            "email": "rw056h@gmail.com",
+            "homepage": "https://ridintek.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/routing": "^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0"
+        "illuminate/routing": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"
     },
     "require-dev": {
         "orchestra/testbench": "5.*|6.*|^7.0|^8.0|^9.0",
@@ -29,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Biscolab\\ReCaptcha\\": "src/"
+            "Ridintek\\ReCaptcha\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -37,22 +43,22 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Biscolab\\ReCaptcha\\Tests\\": "tests/"
+            "Ridintek\\ReCaptcha\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit --colors=always"
     },
     "suggest": {
-        "biscolab/laravel-authlog": "It allows to handle logged-in users and force log-out if needed"
+        "ridintek/laravel-authlog": "It allows to handle logged-in users and force log-out if needed"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Biscolab\\ReCaptcha\\ReCaptchaServiceProvider"
+                "Ridintek\\ReCaptcha\\ReCaptchaServiceProvider"
             ],
             "aliases": {
-                "ReCaptcha": "Biscolab\\ReCaptcha\\Facades\\ReCaptcha"
+                "ReCaptcha": "Ridintek\\ReCaptcha\\Facades\\ReCaptcha"
             }
         }
     }
